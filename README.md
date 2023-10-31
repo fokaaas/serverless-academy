@@ -6,5 +6,6 @@
 4. Telegram Bot: Weather Forecast
 5. Telegram Bot: Exchange Rates
 6. Instagram Giveaway
+7. JSON Sorting
 
 Thank you for your stars ✨
