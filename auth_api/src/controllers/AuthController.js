@@ -1,11 +1,11 @@
 import authService from '../services/AuthService.js';
-import {validationResult} from "express-validator";
-import {HttpError} from "../utils/HttpError.js";
+import { validationResult } from 'express-validator';
+import { HttpError } from '../utils/HttpError.js';
 
 class AuthController {
   async signUp(req, res, next) {
     const errors = validationResult(req);
-    if (!errors.isEmpty()) next(HttpError.invalidData(errors.array()));
+    if (!errors.isEmpty()) return next(HttpError.invalidData(errors.array()));
 
     const { email, password } = req.body;
     await authService.signUp(email, password)
