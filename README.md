@@ -14,5 +14,6 @@
 
 1. Auth API
 2. Find User Country By IP
+3. JSON Storage
 
 Thank you for your stars ✨
